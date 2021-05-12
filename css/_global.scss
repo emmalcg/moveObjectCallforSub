@@ -1,0 +1,39 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: $textColor
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    max-width: 1400px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-size: calc(1.8rem + 5vw);
+    margin: 0.5rem 0;
+}
+
+h2 {
+    font-size: calc(1.5rem + 2vw);
+}
+
+a.next,
+a.back {
+    transition: left 0.25s, right 0.25s, width 0.25s;
+}
+
+
+

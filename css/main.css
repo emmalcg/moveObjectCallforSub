@@ -1,0 +1,545 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: .35em .75em .625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: black;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  max-width: 1400px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: calc(1.8rem + 5vw);
+  margin: 0.5rem 0;
+}
+
+h2 {
+  font-size: calc(1.5rem + 2vw);
+}
+
+a.next,
+a.back {
+  -webkit-transition: left 0.25s, right 0.25s, width 0.25s;
+  transition: left 0.25s, right 0.25s, width 0.25s;
+}
+
+body.home {
+  font-family: "futura-pt-bold", sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--text);
+  color: var(--text-fill);
+}
+
+body.home div.background {
+  background-image: url(../assets/callforsubmissions-02.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body.home .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body.home p.click {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+body.home a:hover p.click,
+body.home a:focus p.click {
+  color: #B2E2BF;
+}
+
+body.home section {
+  margin: 1.5rem 0;
+}
+
+body.home section p {
+  font-size: calc(1.5rem + 1vw);
+  margin: 0.5rem 0;
+}
+
+body.home h1,
+body.home h2,
+body.home a {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: white;
+}
+
+body.details {
+  font-family: "futura-pt-bold", sans-serif;
+  font-size: 1.8rem;
+  padding: 0;
+}
+
+body.details a {
+  font-size: 3rem;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+body.details a:hover, body.details a:focus {
+  color: #1292FF;
+}
+
+body.details .back {
+  display: block;
+  margin-top: 2rem;
+  font-family: "futura-pt-bold", sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: white;
+}
+
+body.details .back:hover, body.details .back:focus {
+  color: #B2E2BF;
+}
+
+body.details h1 {
+  font-family: "futura-pt-bold", sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: white;
+  font-size: 5rem;
+  font-style: italic;
+  border: 0.5px solid black;
+  padding: 2rem;
+}
+
+body.details p,
+body.details li {
+  font-family: "futura-pt", sans-serif;
+}
+
+.block {
+  border: 0.5px solid black;
+  padding: 0 2rem;
+  max-width: 800px;
+  margin-top: 3rem;
+}
+
+ul.questions {
+  border: 0.5px solid black;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+ul.questions li {
+  padding: 0.5rem 0;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.process,
+section.requirements {
+  border: 0.5px solid black;
+  padding: 1rem 2rem;
+  width: 49%;
+  margin-bottom: 1.5rem;
+}
+
+section.process a {
+  font-family: "futura-pt-bold", sans-serif;
+  font-size: 1.8rem;
+  color: black;
+}
+
+section.process ul {
+  padding: 0;
+}
+
+section.process li {
+  margin: 1.5rem 0;
+}
+
+ol {
+  padding: 0 2rem;
+}
+
+ol li {
+  margin: 1.5rem 0;
+}
+
+body.details {
+  font-family: "futura-pt-bold", sans-serif;
+  padding: 1rem 0;
+  font-size: 1.8rem;
+}
+
+body.details a {
+  font-size: 3rem;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+body.details a:hover, body.details a:focus {
+  color: #1292FF;
+}
+
+body.details .back {
+  font-family: "futura-pt-bold", sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: white;
+}
+
+body.details .back:hover, body.details .back:focus {
+  color: #B2E2BF;
+}
+
+body.details h1 {
+  font-family: "futura-pt-bold", sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: white;
+  font-size: 5rem;
+  font-style: italic;
+  border: 0.5px solid black;
+  padding: 2rem;
+}
+
+body.details p,
+body.details li {
+  font-family: "futura-pt", sans-serif;
+}
+
+.block {
+  border: 0.5px solid black;
+  padding: 0 2rem;
+  max-width: 800px;
+  margin-top: 3rem;
+}
+
+ul.questions {
+  border: 0.5px solid black;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+ul.questions li {
+  padding: 0.5rem 0;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.process,
+section.requirements {
+  border: 0.5px solid black;
+  padding: 1rem 2rem;
+  width: 49%;
+  margin-bottom: 1.5rem;
+}
+
+section.process a {
+  font-family: "futura-pt-bold", sans-serif;
+  font-size: 1.8rem;
+  color: black;
+}
+
+section.process ul {
+  padding: 0;
+}
+
+section.process li {
+  margin: 1.5rem 0;
+}
+
+ol {
+  padding: 0 2rem;
+}
+
+ol li {
+  margin: 1.5rem 0;
+}
+
+div.loading-screen {
+  position: relative;
+  background-color: white;
+  background-image: url(../assets/glass.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 0%;
+}
+
+div.load-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+  pointer-events: none;
+}
+/*# sourceMappingURL=main.css.map */

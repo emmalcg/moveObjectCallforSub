@@ -1,0 +1,95 @@
+body.details {
+    font-family: $boldFont;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+
+    a {
+        font-size: 3rem;
+        transition: color 0.3s ease;
+
+        &:hover,
+        &:focus {
+            color: $darkerColor;
+        }
+    }
+
+    .back {
+        font-family: $boldFont;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $textColor;
+        color: $textFill;
+
+        &:hover,
+        &:focus {
+            color: $lightBackground;
+        }
+    }
+
+    h1 {
+        font-family: $boldFont;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $textColor;
+        color: $textFill;
+        font-size: 5rem;
+        font-style: italic;
+
+        border: 0.5px solid $textColor;
+        padding: 2rem;
+    }
+
+    p,
+    li {
+        font-family: $regFont;
+    }
+}
+.block {
+    border: 0.5px solid black;
+    padding: 0 2rem;
+    max-width: 800px;
+    margin-top: 3rem;
+}
+
+ul.questions {
+    border: 0.5px solid black;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+ul.questions li {
+    padding: 0.5rem 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.process,
+section.requirements {
+    border: 0.5px solid black;
+    padding: 1rem 2rem;
+    width: 49%;
+    margin-bottom: 1.5rem;
+}
+
+section.process a {
+    font-family: $boldFont;
+    font-size: 1.8rem;
+    color: $textColor;
+}
+
+section.process ul {
+    padding: 0;
+}
+
+section.process li {
+    margin: 1.5rem 0;
+}
+
+ol {
+    padding: 0 2rem;
+}
+
+ol li {
+    margin: 1.5rem 0;
+}
