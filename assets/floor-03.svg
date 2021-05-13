@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1786.88 1275">
+  <defs>
+    <style>
+      .a {
+        fill: #fff;
+        stroke: #999;
+        stroke-miterlimit: 10;
+        stroke-width: 0.75px;
+      }
+
+      .b {
+        fill: url(#a);
+      }
+    </style>
+    <linearGradient id="a" x1="893.14" y1="1275.68" x2="893.14" y2="-0.64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.1" stop-color="#fff" stop-opacity="0.18"/>
+      <stop offset="0.23" stop-color="#fff" stop-opacity="0.4"/>
+      <stop offset="0.37" stop-color="#fff" stop-opacity="0.58"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0.73"/>
+      <stop offset="0.63" stop-color="#fff" stop-opacity="0.85"/>
+      <stop offset="0.76" stop-color="#fff" stop-opacity="0.93"/>
+      <stop offset="0.88" stop-color="#fff" stop-opacity="0.98"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <line class="a" x1="712" y1="1275.5" x2="1787.66" y2="632.16"/>
+  <line class="a" x1="50.15" y1="1275.68" x2="1784.08" y2="492.73"/>
+  <line class="a" x1="0.1" y1="1030.79" x2="1787.66" y2="412.29"/>
+  <line class="a" x1="3.67" y1="823.43" x2="1785.87" y2="342.58"/>
+  <line class="a" x1="1.89" y1="694.73" x2="1785.87" y2="290.74"/>
+  <line class="a" x1="0.1" y1="562.45" x2="1785.87" y2="251.41"/>
+  <line class="a" x1="1.89" y1="473.07" x2="1784.08" y2="226.38"/>
+  <line class="a" x1="1.89" y1="394.42" x2="1784.08" y2="197.78"/>
+  <line class="a" x1="1.89" y1="339" x2="1784.08" y2="178.12"/>
+  <line class="a" x1="-1.69" y1="297.89" x2="1784.08" y2="172.76"/>
+  <line class="a" x1="-1.69" y1="247.84" x2="1787.66" y2="167.39"/>
+  <line class="a" x1="794" y1="1274.5" x2="0.1" y2="591.05"/>
+  <line class="a" x1="1298" y1="1272.5" x2="-1.69" y2="467.71"/>
+  <line class="a" x1="1785.87" y1="1243.51" x2="1.89" y2="356.88"/>
+  <line class="a" x1="1785.87" y1="939.62" x2="1.89" y2="297.89"/>
+  <line class="a" x1="1785.87" y1="773.38" x2="1.89" y2="256.77"/>
+  <line class="a" x1="1785.87" y1="623.22" x2="1.89" y2="226.38"/>
+  <line class="a" x1="1784.08" y1="530.27" x2="1.89" y2="204.93"/>
+  <line class="a" x1="1784.08" y1="444.47" x2="300.41" y2="233.53"/>
+  <line class="a" x1="1785.87" y1="371.18" x2="425.36" y2="228.99"/>
+  <line class="a" x1="1785.87" y1="333.64" x2="596.78" y2="221.51"/>
+  <line class="a" x1="1785.87" y1="249.62" x2="993.09" y2="203.2"/>
+  <line class="a" x1="1243" y1="192.5" x2="1784.08" y2="219.23"/>
+  <line class="a" x1="787.16" y1="212.36" x2="1784.08" y2="290.74"/>
+  <polygon class="b" points="1787.66 1275.68 -1.69 1275.68 3.67 -0.64 1787.97 -0.62 1787.66 1275.68"/>
+  <line class="a" x1="380.85" y1="1273.89" x2="0.1" y2="801.98"/>
+  <line class="a" x1="1264.13" y1="1275.59" x2="1785.87" y2="860.97"/>
+</svg>

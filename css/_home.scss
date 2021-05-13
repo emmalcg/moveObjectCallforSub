@@ -1,9 +1,8 @@
 div.background {
     font-family: $boldFont;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--text);
+    -webkit-text-stroke-color: $textColor;
     color: $textColor;
-
 
     background-image: url(../assets/callforsubmissions-02.svg);
     background-size: cover;
@@ -11,8 +10,6 @@ div.background {
     background-repeat: no-repeat;
     height: 100vh;
     overflow: hidden;
-
-
 
 .wrapper {
     display: flex;
@@ -47,4 +44,11 @@ a {
     color: $textFill;
 }
 }
+
+h1.main-text {
+    font-size: calc(1.8rem + 5vw);
+    letter-spacing: 1px;
+    margin: 2rem 0 0 0;
+}
+
 

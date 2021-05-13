@@ -249,11 +249,6 @@ ul {
   list-style-type: none;
 }
 
-h1 {
-  font-size: calc(1.8rem + 5vw);
-  margin: 0.5rem 0;
-}
-
 h2 {
   font-size: calc(1.5rem + 2vw);
 }
@@ -267,7 +262,7 @@ a.back {
 div.background {
   font-family: "futura-pt-bold", sans-serif;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--text);
+  -webkit-text-stroke-color: black;
   color: black;
   background-image: url(../assets/callforsubmissions-02.svg);
   background-size: cover;
@@ -316,6 +311,12 @@ div.background a {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   color: white;
+}
+
+h1.main-text {
+  font-size: calc(1.8rem + 5vw);
+  letter-spacing: 1px;
+  margin: 2rem 0 0 0;
 }
 
 .details {
