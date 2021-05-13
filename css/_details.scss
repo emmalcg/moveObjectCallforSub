@@ -27,28 +27,22 @@
         }
     }
 
-    h1 {
-        font-family: $boldFont;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: $textColor;
-        color: $textFill;
-        font-size: 5rem;
-        font-style: italic;
-
-        border: 0.5px solid $textColor;
-        padding: 2rem;
-    }
-
+    
     p,
     li {
         font-family: $regFont;
     }
 }
-.block {
-    border: 0.5px solid black;
-    padding: 0 2rem;
+div.block {
+    border: 0.5px solid $textColor;
+    padding: 2rem;
     max-width: 800px;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
+
+    h1,
+    h2 {
+        font-size: 3rem;
+    }
 }
 
 ul.questions {
@@ -94,4 +88,16 @@ ol {
 
 ol li {
     margin: 1.5rem 0;
+}
+
+p.bottom-text {
+    font-family: $boldFont;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $textColor;
+    color: $textFill;
+    font-size: 5rem;
+    font-style: italic;
+
+    border: 0.5px solid $textColor;
+    padding: 2rem;
 }

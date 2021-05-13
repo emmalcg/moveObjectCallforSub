@@ -347,27 +347,21 @@ div.background a {
   color: #B2E2BF;
 }
 
-.details h1 {
-  font-family: "futura-pt-bold", sans-serif;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  color: white;
-  font-size: 5rem;
-  font-style: italic;
-  border: 0.5px solid black;
-  padding: 2rem;
-}
-
 .details p,
 .details li {
   font-family: "futura-pt", sans-serif;
 }
 
-.block {
+div.block {
   border: 0.5px solid black;
-  padding: 0 2rem;
+  padding: 2rem;
   max-width: 800px;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
+}
+
+div.block h1,
+div.block h2 {
+  font-size: 3rem;
 }
 
 ul.questions {
@@ -419,34 +413,7 @@ ol li {
   margin: 1.5rem 0;
 }
 
-body.details {
-  font-family: "futura-pt-bold", sans-serif;
-  padding: 1rem 0;
-  font-size: 1.8rem;
-}
-
-body.details a {
-  font-size: 3rem;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-}
-
-body.details a:hover, body.details a:focus {
-  color: #1292FF;
-}
-
-body.details .back {
-  font-family: "futura-pt-bold", sans-serif;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  color: white;
-}
-
-body.details .back:hover, body.details .back:focus {
-  color: #B2E2BF;
-}
-
-body.details h1 {
+p.bottom-text {
   font-family: "futura-pt-bold", sans-serif;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
@@ -457,65 +424,20 @@ body.details h1 {
   padding: 2rem;
 }
 
-body.details p,
-body.details li {
-  font-family: "futura-pt", sans-serif;
+@media (max-width: 700px) {
+  div.flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  div.flex section {
+    width: 100%;
+  }
 }
 
-.block {
-  border: 0.5px solid black;
-  padding: 0 2rem;
-  max-width: 800px;
-  margin-top: 3rem;
-}
-
-ul.questions {
-  border: 0.5px solid black;
-  max-width: 800px;
-  padding: 2rem;
-}
-
-ul.questions li {
-  padding: 0.5rem 0;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-section.process,
-section.requirements {
-  border: 0.5px solid black;
-  padding: 1rem 2rem;
-  width: 49%;
-  margin-bottom: 1.5rem;
-}
-
-section.process a {
-  font-family: "futura-pt-bold", sans-serif;
-  font-size: 1.8rem;
-  color: black;
-}
-
-section.process ul {
-  padding: 0;
-}
-
-section.process li {
-  margin: 1.5rem 0;
-}
-
-ol {
-  padding: 0 2rem;
-}
-
-ol li {
-  margin: 1.5rem 0;
+@media (max-width: 500px) {
+  body.home {
+    background-size: 220%;
+  }
 }
 
 div.loading-screen {
