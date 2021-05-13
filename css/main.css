@@ -306,7 +306,7 @@ div.background section {
 }
 
 div.background section p {
-  font-size: calc(1.5rem + 1vw);
+  font-size: calc(2rem + 1vw);
   margin: 0.5rem 0;
 }
 
@@ -361,7 +361,7 @@ div.block {
 
 div.block h1,
 div.block h2 {
-  font-size: 3rem;
+  font-size: calc(1.8rem + 1vw);
 }
 
 ul.questions {
