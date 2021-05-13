@@ -264,14 +264,11 @@ a.back {
   transition: left 0.25s, right 0.25s, width 0.25s;
 }
 
-body.home {
+div.background {
   font-family: "futura-pt-bold", sans-serif;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--text);
-  color: var(--text-fill);
-}
-
-body.home div.background {
+  color: black;
   background-image: url(../assets/callforsubmissions-02.svg);
   background-size: cover;
   background-position: center;
@@ -280,7 +277,7 @@ body.home div.background {
   overflow: hidden;
 }
 
-body.home .wrapper {
+div.background .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,50 +291,50 @@ body.home .wrapper {
           justify-content: space-between;
 }
 
-body.home p.click {
+div.background p.click {
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
-body.home a:hover p.click,
-body.home a:focus p.click {
+div.background a:hover p.click,
+div.background a:focus p.click {
   color: #B2E2BF;
 }
 
-body.home section {
+div.background section {
   margin: 1.5rem 0;
 }
 
-body.home section p {
+div.background section p {
   font-size: calc(1.5rem + 1vw);
   margin: 0.5rem 0;
 }
 
-body.home h1,
-body.home h2,
-body.home a {
+div.background h1,
+div.background h2,
+div.background a {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   color: white;
 }
 
-body.details {
+.details {
   font-family: "futura-pt-bold", sans-serif;
   font-size: 1.8rem;
   padding: 0;
 }
 
-body.details a {
+.details a {
   font-size: 3rem;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
-body.details a:hover, body.details a:focus {
+.details a:hover, .details a:focus {
   color: #1292FF;
 }
 
-body.details .back {
+.details .back {
   display: block;
   margin-top: 2rem;
   font-family: "futura-pt-bold", sans-serif;
@@ -346,11 +343,11 @@ body.details .back {
   color: white;
 }
 
-body.details .back:hover, body.details .back:focus {
+.details .back:hover, .details .back:focus {
   color: #B2E2BF;
 }
 
-body.details h1 {
+.details h1 {
   font-family: "futura-pt-bold", sans-serif;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
@@ -361,8 +358,8 @@ body.details h1 {
   padding: 2rem;
 }
 
-body.details p,
-body.details li {
+.details p,
+.details li {
   font-family: "futura-pt", sans-serif;
 }
 

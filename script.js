@@ -29,8 +29,10 @@ function pageTransition() {
 
 
 barba.init({
-    // sync: true,
-    // debug: true,
+    preventRunning: true,
+    sync: true,
+    debug: true,
+    logLevel: 'warning',
 
     transitions: [
         {
