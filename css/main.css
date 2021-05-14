@@ -313,7 +313,7 @@ div.background a {
   color: white;
 }
 
-h1.main-text {
+h1.logo {
   font-size: calc(1.8rem + 5vw);
   letter-spacing: 1px;
   margin: 2rem 0 0 0;
@@ -354,8 +354,7 @@ h1.main-text {
 }
 
 div.block {
-  border: 0.5px solid black;
-  padding: 2rem;
+  padding: 0 2rem;
   max-width: 800px;
   margin-top: 2.5rem;
 }
@@ -370,7 +369,6 @@ span.title {
 }
 
 ul.questions {
-  border: 0.5px solid black;
   max-width: 800px;
   padding: 2rem;
 }
@@ -390,7 +388,6 @@ ul.questions li {
 
 section.process,
 section.requirements {
-  border: 0.5px solid black;
   padding: 1rem 2rem;
   width: 49%;
   margin-bottom: 1.5rem;
@@ -425,8 +422,18 @@ p.bottom-text {
   color: white;
   font-size: 5rem;
   font-style: italic;
-  border: 0.5px solid black;
   padding: 2rem;
+  margin-top: 0;
+}
+
+.border {
+  border: 1px solid #B2E2BF;
+  -webkit-transition: border 1.3s 0.5s ease;
+  transition: border 1.3s 0.5s ease;
+}
+
+.border.in-view {
+  border: 0.5px solid black;
 }
 
 @media (max-width: 700px) {
