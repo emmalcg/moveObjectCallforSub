@@ -1,13 +1,34 @@
-const body = document.querySelector('body');
+const loading = () => {
+    const div = document.querySelector('.typing');
+    // const logo = document.querySelector('.logo');
+    div.classList.add('show');
 
-const wiper = document.createElement('div');
-wiper.classList.add('wiper')
-body.appendChild(wiper);
+
+
+    const tl = new gsap.timeline({
+        // setTimeout(() => {
+
+            
+        // }, 3000)
+        onComplete: () => {
+            div.classList.remove('show');
+        }
+    });
+
+    tl.to('.text', {text: {value: "MoveObjects On"}, duration: 4, delay: 0.2, ease: "none"})
+    // tl.to('.cursor', {opacity: 0, ease: 'power2.inOut' })
+
+    // let cursor = gsap.to('.cursor', {opacity: 0, ease: 'power2.inOut', repeat: -1 })
+    // gsap.fromTo('.cursor', {autoAlpha: 0, x: -10}, {autoAlpha: 1, duration: 0.5, repeat: -1, ease: SteppedEase.config(1)})
+
+    // let tween = gsap.to('.text', {text: {value: "Move Objects On"}, duration: 5, delay: 1, ease: "none"})
+}
+
+loading();
 
 const runScripts = () => {
     const borders = document.querySelectorAll('.border');
 
-    
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if(entry.intersectionRatio >= 0.1) {
@@ -22,12 +43,7 @@ const runScripts = () => {
     
     borders.forEach((border => {
         observer.observe(border)
-    }))
-    
-    // const mainText = document.querySelectorAll('.move')
-
-    // const mainPageObserver 
-    
+    }))  
 }
 
 runScripts();
@@ -78,91 +94,15 @@ barba.init({
             runScripts();
         },
 
-        // async once(data) {
-
-        // }
-        
+        async once(data) {
+            
         }
         
-        
-        
-    //     {
-    //         name: "fadeIn",
-    //         once({ current, next, trigger }) {
-    //             return new Promise(resolve => {
-    //                 const tl = gsap.timeline({
-    //                     onComplete() {
-    //                         resolve()
-    //                     }
-    //                 })
-
-    //                 tl
-    //                     .set(next.container, { opacity: 0 })
-    //                     .to(next.container, { opacity: 1, delay: 1 })
-    //             })
-    //         },
-    //         name: 'next',
-    //         leave({ current, next, trigger }) {
-    //             return new Promise(resolve => {
-
-    //                 const tl = gsap.timeline({
-    //                     onComplete() {
-    //                         resolve()
-    //                     }
-    //                 })
-
-    //                 tl
-    //                 .set(wiper, {x: 0}, 0)
-    //                 .to(wiper, {x: 0}, 0)
-                    
-
-
-    //             })
-
-    //         },
-    //         enter({ current, next, trigger }) {
-    //             runScripts();
-
-    //             return new Promise(resolve => {
-                    
-    //                 const tl = gsap.timeline({
-    //                     onComplete() {
-    //                         resolve()
-    //                     }
-    //                 })
-
-    //                 tl
-    //                 .to(wiper, {x: '100%'}, 0)
-                    
-    //             })
-    //         }
-    //     }
-
+        }
     ],
-    // views: [],
-    // debug: true
 })
 
 
 
 
-// barba.init({
-//     preventRunning: true,
-//     sync: true,
-//     debug: true,
-//     logLevel: 'warning',
 
-//     transitions: [
-//         {
-//             async leave(data) {
-//                 const done = this.async();
-
-//                 pageTransition();
-//                 await delay(1000);
-//                 done()
-//             },
-
-            
-//         },
-//     ]
-// })

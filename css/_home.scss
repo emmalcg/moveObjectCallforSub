@@ -11,44 +11,50 @@ div.background {
     height: 100vh;
     overflow: hidden;
 
-.wrapper {
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: space-between;
+    .wrapper {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    p.click {
+        transition: color 0.3s ease;
+    }
+
+    a:hover p.click,
+    a:focus p.click {
+        color: $lightBackground;
+    }
+
+    section {
+        margin: 1.5rem 0;
+    }
+
+    section p {
+        font-size: calc(2rem + 1vw);
+        margin: 0.5rem 0;
+    }
+
+    h1,
+    h2,
+    a {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $textColor;
+        color: $textFill;
+    }
+
+
+    h1.logo {
+        font-size: calc(1.8rem + 5vw);
+        letter-spacing: 1px;
+        margin: 2rem 0 0 0;
+    }
+
+    h2 {
+        margin: 1.5rem 0;
+    }
 }
 
-p.click {
-    transition: color 0.3s ease;
-}
-
-a:hover p.click,
-a:focus p.click {
-    color: $lightBackground;
-}
-
-section {
-    margin: 1.5rem 0;
-}
-
-section p {
-    font-size: calc(2rem + 1vw);
-    margin: 0.5rem 0;
-}
-
-h1,
-h2,
-a {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: $textColor;
-    color: $textFill;
-}
-}
-
-h1.logo {
-    font-size: calc(1.8rem + 5vw);
-    letter-spacing: 1px;
-    margin: 2rem 0 0 0;
-}
 
 

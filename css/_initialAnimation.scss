@@ -1,9 +1,38 @@
-// html.is-transitioning * {
-//     pointer-events: none;
-//     cursor: progress;
-// }
+div.typing {
+    display: none;
+}
 
-// .is-transitioning [data-barba='container'] {
-//     position: absolute;
-//     width: 100%;
-// }
+div.typing.show {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .type-container {
+        overflow: hidden
+    }
+
+    span.text {
+        padding: 0 10px 0 0;
+        margin: 0;
+        font-family: Arial;
+        color: white;
+        font-size: calc(1.8rem + 5vw);
+    }
+    span.cursor {
+        color: white;
+        font-size: calc(1.8rem + 5vw);
+        font-family: Arial;
+        display: inline-block;
+        animation: blink 0.8s infinite;
+    }
+}
+
+@keyframes blink {
+    0% {color: transparent}
+    50% {color: white}
+    100% {color: transparent}
+}
