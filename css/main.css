@@ -365,6 +365,10 @@ div.block h2 {
   font-size: calc(1.8rem + 1vw);
 }
 
+span.title {
+  font-style: italic;
+}
+
 ul.questions {
   border: 0.5px solid black;
   max-width: 800px;
