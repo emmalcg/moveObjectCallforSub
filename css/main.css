@@ -259,6 +259,71 @@ a.back {
   transition: left 0.25s, right 0.25s, width 0.25s;
 }
 
+div.typing {
+  display: none;
+}
+
+div.typing.show {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.typing.show .type-container {
+  overflow: hidden;
+}
+
+div.typing.show span.text {
+  padding: 0 10px 0 0;
+  margin: 0;
+  font-family: Arial;
+  color: white;
+  font-size: calc(1.8rem + 5vw);
+}
+
+div.typing.show span.cursor {
+  color: white;
+  font-size: calc(1.8rem + 5vw);
+  font-family: Arial;
+  display: inline-block;
+  -webkit-animation: blink 0.8s infinite;
+          animation: blink 0.8s infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: transparent;
+  }
+}
+
+@keyframes blink {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: transparent;
+  }
+}
+
 div.background {
   font-family: "futura-pt-bold", sans-serif;
   -webkit-text-stroke-width: 1px;
@@ -313,10 +378,14 @@ div.background a {
   color: white;
 }
 
-h1.main-text {
+div.background h1.logo {
   font-size: calc(1.8rem + 5vw);
   letter-spacing: 1px;
   margin: 2rem 0 0 0;
+}
+
+div.background h2 {
+  margin: 1.5rem 0;
 }
 
 .details {
@@ -354,8 +423,7 @@ h1.main-text {
 }
 
 div.block {
-  border: 0.5px solid black;
-  padding: 2rem;
+  padding: 0 2rem;
   max-width: 800px;
   margin-top: 2.5rem;
 }
@@ -370,7 +438,6 @@ span.title {
 }
 
 ul.questions {
-  border: 0.5px solid black;
   max-width: 800px;
   padding: 2rem;
 }
@@ -390,7 +457,6 @@ ul.questions li {
 
 section.process,
 section.requirements {
-  border: 0.5px solid black;
   padding: 1rem 2rem;
   width: 49%;
   margin-bottom: 1.5rem;
@@ -425,8 +491,18 @@ p.bottom-text {
   color: white;
   font-size: 5rem;
   font-style: italic;
-  border: 0.5px solid black;
   padding: 2rem;
+  margin-top: 0;
+}
+
+.border {
+  border: 1px solid #B2E2BF;
+  -webkit-transition: border 1.3s 0.5s ease;
+  transition: border 1.3s 0.5s ease;
+}
+
+.border.in-view {
+  border: 0.5px solid black;
 }
 
 @media (max-width: 700px) {
