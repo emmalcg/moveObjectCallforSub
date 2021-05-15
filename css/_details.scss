@@ -38,9 +38,13 @@ div.block {
     max-width: 800px;
     margin-top: 2.5rem;
 
-    h1,
-    h2 {
+    h1 {
         font-size: calc(1.8rem + 1vw);
+    }
+
+    h2,
+    p {
+        font-size: calc(1.6rem + 1vw);
     }
 }
 
