@@ -19,7 +19,7 @@ div.background {
     }
 
     p.click {
-        transition: color 0.3s ease;
+        transition: color 0.5s ease-in-out;
     }
 
     a:hover p.click,
@@ -27,11 +27,26 @@ div.background {
         color: $lightBackground;
     }
 
-    section {
-        margin: 1.5rem 0;
+    section.move {
+        margin: 1rem 0;
     }
 
-    section p {
+    section.move a {
+        display: inline-block;
+        position: relative;
+        border: 0.5px solid transparent;
+        left: -1rem;
+        padding: 1rem;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    section.move a:hover,
+    section.move a:focus {
+        border: 0.5px solid $textColor;
+        background-color: $textFill;
+    }
+
+    section.move p {
         font-size: calc(2rem + 1vw);
         margin: 0.5rem 0;
     }

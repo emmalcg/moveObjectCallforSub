@@ -45,7 +45,10 @@ div.block {
 }
 
 span.title {
-    font-style: italic; 
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: $textColor;
+    color: $textFill;
+    letter-spacing: 1px;
 }
 
 ul.questions {

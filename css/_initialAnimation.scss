@@ -3,6 +3,9 @@ div.typing {
 }
 
 div.typing.show {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: block;
     height: 100vh;
     width: 100vw;
@@ -10,22 +13,26 @@ div.typing.show {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 
     .type-container {
         overflow: hidden
     }
 
+    span.text,
+    span.cursor {
+        -webkit-text-stroke-width: 0;
+        color: $textFill;
+        font-size: calc(1.8rem + 5vw);
+        font-family: Arial;
+    }
+
     span.text {
         padding: 0 10px 0 0;
         margin: 0;
-        font-family: Arial;
-        color: white;
-        font-size: calc(1.8rem + 5vw);
     }
+
     span.cursor {
-        color: white;
-        font-size: calc(1.8rem + 5vw);
-        font-family: Arial;
         display: inline-block;
         animation: blink 0.8s infinite;
     }
