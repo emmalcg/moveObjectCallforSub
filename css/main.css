@@ -270,7 +270,7 @@ div.typing.show {
   display: block;
   height: 100vh;
   width: 100vw;
-  background-color: black;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,7 +290,7 @@ div.typing.show .type-container {
 div.typing.show span.text,
 div.typing.show span.cursor {
   -webkit-text-stroke-width: 0;
-  color: white;
+  color: #1292FF;
   font-size: calc(1.8rem + 5vw);
   font-family: Arial;
 }
@@ -311,7 +311,7 @@ div.typing.show span.cursor {
     color: transparent;
   }
   50% {
-    color: white;
+    color: #1292FF;
   }
   100% {
     color: transparent;
@@ -323,7 +323,7 @@ div.typing.show span.cursor {
     color: transparent;
   }
   50% {
-    color: white;
+    color: #1292FF;
   }
   100% {
     color: transparent;
