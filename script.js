@@ -11,7 +11,9 @@ const loading = () => {
     });
 
     tl.to('.text', {text: {value: "MoveObjects On"}, duration: 4, delay: 0.2, ease: "none"})
+    tl.to('.typing span', {delay: 2, duration: 0.5, opacity: 0})
     tl.to('.typing', {duration: 1, opacity: 0})
+    // tl.to('.typing', {delay: 2, duration: 1, scale: 0})
 }
 
 loading();

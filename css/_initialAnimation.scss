@@ -8,8 +8,9 @@ div.typing.show {
     left: 0;
     display: block;
     height: 100vh;
+    height: -webkit-fill-available;
     width: 100vw;
-    background-color: black;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +23,7 @@ div.typing.show {
     span.text,
     span.cursor {
         -webkit-text-stroke-width: 0;
-        color: $textFill;
+        color: $darkerColor;
         font-size: calc(1.8rem + 5vw);
         font-family: Arial;
     }
@@ -40,6 +41,6 @@ div.typing.show {
 
 @keyframes blink {
     0% {color: transparent}
-    50% {color: white}
+    50% {color: $darkerColor}
     100% {color: transparent}
 }
