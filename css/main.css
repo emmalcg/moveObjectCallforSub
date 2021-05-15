@@ -228,6 +228,7 @@ html {
 
 html {
   font-size: 62.5%;
+  height: -webkit-fill-available;
 }
 
 body {
@@ -269,7 +270,6 @@ div.typing.show {
   left: 0;
   display: block;
   height: 100vh;
-  height: -webkit-fill-available;
   width: 100vw;
   background-color: white;
   display: -webkit-box;
@@ -340,13 +340,7 @@ div.background {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-<<<<<<< HEAD
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
-=======
   height: 100vh;
-  height: -webkit-fill-available;
->>>>>>> eb151b2d036e71898cdf328212f0dc38e24c99ea
   overflow: hidden;
 }
 

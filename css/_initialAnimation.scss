@@ -7,8 +7,7 @@ div.typing.show {
     top: 0;
     left: 0;
     display: block;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+    height: 100vh;
     width: 100vw;
     background-color: white;
     display: flex;
