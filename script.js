@@ -86,9 +86,7 @@ barba.init({
             runScripts();
         },
 
-        // async once(data) {
-           
-        // }
+        
         
         }
     ],
