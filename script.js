@@ -1,27 +1,17 @@
 const loading = () => {
     const div = document.querySelector('.typing');
-    // const logo = document.querySelector('.logo');
     div.classList.add('show');
 
 
 
     const tl = new gsap.timeline({
-        // setTimeout(() => {
-
-            
-        // }, 3000)
         onComplete: () => {
             div.classList.remove('show');
         }
     });
 
     tl.to('.text', {text: {value: "MoveObjects On"}, duration: 4, delay: 0.2, ease: "none"})
-    // tl.to('.cursor', {opacity: 0, ease: 'power2.inOut' })
-
-    // let cursor = gsap.to('.cursor', {opacity: 0, ease: 'power2.inOut', repeat: -1 })
-    // gsap.fromTo('.cursor', {autoAlpha: 0, x: -10}, {autoAlpha: 1, duration: 0.5, repeat: -1, ease: SteppedEase.config(1)})
-
-    // let tween = gsap.to('.text', {text: {value: "Move Objects On"}, duration: 5, delay: 1, ease: "none"})
+    tl.to('.typing', {duration: 1, opacity: 0})
 }
 
 loading();
@@ -94,9 +84,9 @@ barba.init({
             runScripts();
         },
 
-        async once(data) {
-            
-        }
+        // async once(data) {
+           
+        // }
         
         }
     ],

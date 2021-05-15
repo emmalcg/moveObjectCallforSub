@@ -264,6 +264,9 @@ div.typing {
 }
 
 div.typing.show {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: block;
   height: 100vh;
   width: 100vw;
@@ -277,24 +280,27 @@ div.typing.show {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 1;
 }
 
 div.typing.show .type-container {
   overflow: hidden;
 }
 
+div.typing.show span.text,
+div.typing.show span.cursor {
+  -webkit-text-stroke-width: 0;
+  color: white;
+  font-size: calc(1.8rem + 5vw);
+  font-family: Arial;
+}
+
 div.typing.show span.text {
   padding: 0 10px 0 0;
   margin: 0;
-  font-family: Arial;
-  color: white;
-  font-size: calc(1.8rem + 5vw);
 }
 
 div.typing.show span.cursor {
-  color: white;
-  font-size: calc(1.8rem + 5vw);
-  font-family: Arial;
   display: inline-block;
   -webkit-animation: blink 0.8s infinite;
           animation: blink 0.8s infinite;
@@ -352,8 +358,8 @@ div.background .wrapper {
 }
 
 div.background p.click {
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
+  -webkit-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
 }
 
 div.background a:hover p.click,
@@ -361,11 +367,27 @@ div.background a:focus p.click {
   color: #B2E2BF;
 }
 
-div.background section {
-  margin: 1.5rem 0;
+div.background section.move {
+  margin: 1rem 0;
 }
 
-div.background section p {
+div.background section.move a {
+  display: inline-block;
+  position: relative;
+  border: 0.5px solid transparent;
+  left: -1rem;
+  padding: 1rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+div.background section.move a:hover,
+div.background section.move a:focus {
+  border: 0.5px solid black;
+  background-color: white;
+}
+
+div.background section.move p {
   font-size: calc(2rem + 1vw);
   margin: 0.5rem 0;
 }
@@ -434,7 +456,10 @@ div.block h2 {
 }
 
 span.title {
-  font-style: italic;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+  color: white;
+  letter-spacing: 1px;
 }
 
 ul.questions {
