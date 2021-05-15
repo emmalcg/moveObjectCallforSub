@@ -269,6 +269,7 @@ div.typing.show {
   left: 0;
   display: block;
   height: 100vh;
+  height: -webkit-fill-available;
   width: 100vw;
   background-color: white;
   display: -webkit-box;
@@ -340,6 +341,7 @@ div.background {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+  height: -webkit-fill-available;
   overflow: hidden;
 }
 
