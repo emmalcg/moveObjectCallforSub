@@ -34,8 +34,7 @@
     }
 }
 div.block {
-    border: 0.5px solid $textColor;
-    padding: 2rem;
+    padding: 0 2rem;
     max-width: 800px;
     margin-top: 2.5rem;
 
@@ -46,11 +45,13 @@ div.block {
 }
 
 span.title {
-    font-style: italic; 
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: $textColor;
+    color: $textFill;
+    letter-spacing: 1px;
 }
 
 ul.questions {
-    border: 0.5px solid black;
     max-width: 800px;
     padding: 2rem;
 }
@@ -66,7 +67,6 @@ ul.questions li {
 
 section.process,
 section.requirements {
-    border: 0.5px solid black;
     padding: 1rem 2rem;
     width: 49%;
     margin-bottom: 1.5rem;
@@ -101,7 +101,18 @@ p.bottom-text {
     color: $textFill;
     font-size: 5rem;
     font-style: italic;
-
-    border: 0.5px solid $textColor;
     padding: 2rem;
+    margin-top: 0;
 }
+
+.border {
+    border: 1px solid $lightBackground;
+    transition: border 1.3s 0.5s ease;
+}
+
+.border.in-view {
+    border: 0.5px solid $textColor;
+}
+
+
+

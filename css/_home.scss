@@ -8,48 +8,74 @@ div.background {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+<<<<<<< HEAD
     min-height: 100vh;
     min-height: -webkit-fill-available;
+=======
+    height: 100vh;
+    height: -webkit-fill-available;
+>>>>>>> eb151b2d036e71898cdf328212f0dc38e24c99ea
     overflow: hidden;
 
-.wrapper {
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: space-between;
+    .wrapper {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    p.click {
+        transition: color 0.5s ease-in-out;
+    }
+
+    a:hover p.click,
+    a:focus p.click {
+        color: $lightBackground;
+    }
+
+    section.move {
+        margin: 1rem 0;
+    }
+
+    section.move a {
+        display: inline-block;
+        position: relative;
+        border: 0.5px solid transparent;
+        left: -1rem;
+        padding: 1rem;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    section.move a:hover,
+    section.move a:focus {
+        border: 0.5px solid $textColor;
+        background-color: $textFill;
+    }
+
+    section.move p {
+        font-size: calc(2rem + 1vw);
+        margin: 0.5rem 0;
+    }
+
+    h1,
+    h2,
+    a {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $textColor;
+        color: $textFill;
+    }
+
+
+    h1.logo {
+        font-size: calc(1.8rem + 5vw);
+        letter-spacing: 1px;
+        margin: 2rem 0 0 0;
+    }
+
+    h2 {
+        margin: 1.5rem 0;
+    }
 }
 
-p.click {
-    transition: color 0.3s ease;
-}
-
-a:hover p.click,
-a:focus p.click {
-    color: $lightBackground;
-}
-
-section {
-    margin: 1.5rem 0;
-}
-
-section p {
-    font-size: calc(2rem + 1vw);
-    margin: 0.5rem 0;
-}
-
-h1,
-h2,
-a {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: $textColor;
-    color: $textFill;
-}
-}
-
-h1.main-text {
-    font-size: calc(1.8rem + 5vw);
-    letter-spacing: 1px;
-    margin: 2rem 0 0 0;
-}
 
 
