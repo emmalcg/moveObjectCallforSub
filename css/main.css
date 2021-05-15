@@ -341,7 +341,6 @@ div.background {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  height: -webkit-fill-available;
   overflow: hidden;
 }
 
